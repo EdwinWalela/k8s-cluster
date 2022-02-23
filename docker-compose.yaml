@@ -1,0 +1,22 @@
+version: '3'
+services:
+ blog:
+  container_name: 'blog'
+  build: ./blog
+  restart: always
+  ports:
+   - '8000:8000'
+  working_dir: /root/app
+  volumes:
+   - ./blog:/root/app
+ api:
+  container_name: 'api'
+  build: ./go-api
+  restart: always
+  ports:
+  - '3000:3000'
+  working_dir: /root/app
+  volumes:
+  - ./api:/root/app
+  environment:
+    PORT: 3000
