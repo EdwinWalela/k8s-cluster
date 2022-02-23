@@ -1,6 +1,6 @@
 # Kubernetes Cluster Demo
 
-K8s cluster image source
+Source code for [K8 demo cluster](https://github.com/EdwinWalela/k8s-cluster)
 
 ## Applications
 
